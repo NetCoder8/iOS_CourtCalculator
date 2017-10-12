@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
@@ -12,35 +12,37 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2017 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye" misplaced="YES">
-                    <rect key="frame" x="20" y="439" width="441" height="21"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2017 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye" misplaced="YES" ambiguous="YES">
+                    <rect key="frame" x="20" y="413.5" width="441" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Court Calculator" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Court Calculator" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX" misplaced="YES" ambiguous="YES">
                     <rect key="frame" x="20" y="55" width="440" height="65"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="150" translatesAutoresizingMaskIntoConstraints="NO">
-                    <rect key="frame" x="114" y="184" width="240" height="214"/>
-                    <variation key="heightClass=regular-widthClass=compact" image="Images/badge.png"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="580" translatesAutoresizingMaskIntoConstraints="NO" image="Images/badge.png" misplaced="YES" ambiguous="YES">
+                    <rect key="frame" x="120" y="161" width="240" height="128"/>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" customColorSpace="sRGB" colorSpace="calibratedRGB" red="0" green="0.45882352941176469" blue="0.596078431372549" alpha="1"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
-                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
                 <constraint id="147" firstItem="kId-c2-rCX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="55"/>
                 <constraint id="148" firstItem="iN0-l3-epB" firstAttribute="trailing" secondItem="kId-c2-rCX" secondAttribute="trailing" constant="20"/>
                 <constraint id="149" firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20"/>
-                <constraint id="151" firstItem="150" firstAttribute="top" secondItem="kId-c2-rCX" secondAttribute="bottom" constant="84"/>
-                <constraint id="152" firstItem="150" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="114"/>
-                <constraint id="153" firstItem="iN0-l3-epB" firstAttribute="trailing" secondItem="150" secondAttribute="trailing" constant="126"/>
-                <constraint id="154" firstItem="8ie-xW-0ye" firstAttribute="top" secondItem="150" secondAttribute="bottom" constant="107"/>
+                <constraint id="581" firstItem="kId-c2-rCX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="55"/>
+                <constraint id="582" firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20"/>
+                <constraint id="583" firstItem="iN0-l3-epB" firstAttribute="trailing" secondItem="kId-c2-rCX" secondAttribute="trailing" constant="20"/>
+                <constraint id="584" firstItem="580" firstAttribute="top" secondItem="kId-c2-rCX" secondAttribute="bottom" constant="63"/>
+                <constraint id="588" firstItem="iN0-l3-epB" firstAttribute="trailing" secondItem="580" secondAttribute="trailing" constant="120"/>
+                <constraint id="589" firstItem="580" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="120"/>
+                <constraint id="590" firstItem="iN0-l3-epB" firstAttribute="trailing" secondItem="8ie-xW-0ye" secondAttribute="trailing" constant="19"/>
+                <constraint id="591" firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20"/>
+                <constraint id="592" firstItem="iN0-l3-epB" firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="46"/>
+                <constraint id="593" firstItem="8ie-xW-0ye" firstAttribute="top" secondItem="580" secondAttribute="bottom" constant="124"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -50,13 +52,6 @@
                     <exclude reference="147"/>
                     <exclude reference="148"/>
                     <exclude reference="149"/>
-                    <exclude reference="151"/>
-                    <exclude reference="152"/>
-                    <exclude reference="153"/>
-                    <exclude reference="154"/>
-                </mask>
-                <mask key="subviews">
-                    <exclude reference="150"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -64,13 +59,6 @@
                     <include reference="147"/>
                     <include reference="148"/>
                     <include reference="149"/>
-                    <include reference="151"/>
-                    <include reference="152"/>
-                    <include reference="153"/>
-                    <include reference="154"/>
-                </mask>
-                <mask key="subviews">
-                    <include reference="150"/>
                 </mask>
                 <color key="backgroundColor" colorSpace="calibratedRGB" red="0.16470588235294117" green="0.51764705882352946" blue="0.66274509803921566" alpha="1"/>
             </variation>
