@@ -1,4 +1,4 @@
-// WARNING
+﻿// WARNING
 //
 // This file has been generated automatically by Visual Studio from the outlets and
 // actions declared in your storyboard file.
@@ -15,7 +15,11 @@ namespace CourtCalculator
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton getCourtDateButton { get; set; }
+        UIKit.UIButton btnGetCourtDate { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btnWaiverFine { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -23,11 +27,11 @@ namespace CourtCalculator
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel secondMainLabel { get; set; }
+        UIKit.UINavigationItem MainScreen { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton waiverFineButton { get; set; }
+        UIKit.UILabel secondMainLabel { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -39,9 +43,14 @@ namespace CourtCalculator
 
         void ReleaseDesignerOutlets ()
         {
-            if (getCourtDateButton != null) {
-                getCourtDateButton.Dispose ();
-                getCourtDateButton = null;
+            if (btnGetCourtDate != null) {
+                btnGetCourtDate.Dispose ();
+                btnGetCourtDate = null;
+            }
+
+            if (btnWaiverFine != null) {
+                btnWaiverFine.Dispose ();
+                btnWaiverFine = null;
             }
 
             if (Main != null) {
@@ -49,14 +58,14 @@ namespace CourtCalculator
                 Main = null;
             }
 
+            if (MainScreen != null) {
+                MainScreen.Dispose ();
+                MainScreen = null;
+            }
+
             if (secondMainLabel != null) {
                 secondMainLabel.Dispose ();
                 secondMainLabel = null;
-            }
-
-            if (waiverFineButton != null) {
-                waiverFineButton.Dispose ();
-                waiverFineButton = null;
             }
 
             if (welcomeLabel != null) {

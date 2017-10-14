@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4334">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,68 +22,182 @@
                             <mask key="subviews">
                                 <include reference="439"/>
                                 <include reference="599"/>
+                                <include reference="3421"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="4027"/>
+                                <include reference="4028"/>
+                                <include reference="4030"/>
+                                <include reference="4031"/>
+                                <include reference="4037"/>
+                                <include reference="4038"/>
+                                <include reference="4040"/>
+                                <include reference="4041"/>
+                                <include reference="4895"/>
+                                <include reference="4909"/>
+                                <include reference="4923"/>
+                                <include reference="4937"/>
                             </mask>
                         </variation>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1245" translatesAutoresizingMaskIntoConstraints="NO" buttonType="roundedRect" hasAttributedTitle="YES" fixedFrame="YES">
-                                <rect key="frame" x="134" y="207" width="124" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1245" translatesAutoresizingMaskIntoConstraints="NO" buttonType="roundedRect" misplaced="YES">
+                                <rect key="frame" x="96" y="189" width="200" height="32"/>
                                 <connections>
                                     <action selector="GetCourtDateButton_TouchUpInside:" destination="BYZ-38-t0r" id="1272" eventType="touchUpInside"/>
                                 </connections>
                                 <size key="titleShadowOffset" width="0" height="0"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Get Court Date">
-                                            <attributes>
-                                                <color key="NSColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
-                                                <font key="NSFont" name="HelveticaNeue" family="Helvetica Neue" size="17"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Get Court Date">
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
                                 </state>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                    <mask key="constraints">
+                                        <include reference="4029"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="4029" firstAttribute="width" constant="200"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4029"/>
+                                    </mask>
+                                </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1520" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="105" y="255" width="182" height="30"/>
+                            <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1520" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="96" y="263" width="200" height="35"/>
                                 <state key="normal" title="Waiverable Fine Calculator">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                    <mask key="constraints">
+                                        <include reference="4032"/>
+                                        <include reference="4033"/>
+                                    </mask>
+                                </variation>
+                                <rect key="contentStretch" x="0.0" y="0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint id="4032" firstAttribute="width" constant="200"/>
+                                    <constraint id="4033" firstAttribute="height" constant="35"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4032"/>
+                                        <exclude reference="4033"/>
+                                    </mask>
+                                </variation>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Court Calculator " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="439" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="46" y="64" width="300" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Court Calculator " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="439" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="46" y="81" width="300" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 <nil key="highlightedColor"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please make a selection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="599" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="46" y="107" width="283" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please make a selection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="599" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="46" y="121" width="283" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 <nil key="highlightedColor"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint id="4039" firstAttribute="width" constant="283"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4039"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="4039"/>
+                                    </mask>
+                                </variation>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3421" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="76" y="420" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" image="Images/badge.png">
+                                    <mask key="constraints">
+                                        <include reference="4042"/>
+                                        <include reference="4043"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="4042" firstAttribute="width" constant="240"/>
+                                    <constraint id="4043" firstAttribute="height" constant="128"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4042"/>
+                                        <exclude reference="4043"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="439"/>
                                 <exclude reference="599"/>
+                                <exclude reference="3421"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="4027"/>
+                                <exclude reference="4028"/>
+                                <exclude reference="4030"/>
+                                <exclude reference="4031"/>
+                                <exclude reference="4037"/>
+                                <exclude reference="4038"/>
+                                <exclude reference="4040"/>
+                                <exclude reference="4041"/>
+                                <exclude reference="4895"/>
+                                <exclude reference="4909"/>
+                                <exclude reference="4923"/>
+                                <exclude reference="4937"/>
                             </mask>
                         </variation>
+                        <constraints>
+                            <constraint id="4027" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="1245" secondAttribute="trailing" constant="79"/>
+                            <constraint id="4028" firstItem="1245" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="201"/>
+                            <constraint id="4030" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="1520" secondAttribute="trailing" constant="79"/>
+                            <constraint id="4031" firstItem="1520" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="263"/>
+                            <constraint id="4037" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="599" secondAttribute="trailing" constant="46"/>
+                            <constraint id="4038" firstItem="599" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="121"/>
+                            <constraint id="4040" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="3421" secondAttribute="trailing" constant="59"/>
+                            <constraint id="4041" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="3421" secondAttribute="bottom" constant="119"/>
+                            <constraint id="4895" firstItem="8bC-Xf-vdC" firstAttribute="trailingMargin" secondItem="439" secondAttribute="trailing" constant="13"/>
+                            <constraint id="4909" firstItem="439" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30"/>
+                            <constraint id="4923" firstItem="439" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17"/>
+                            <constraint id="4937" firstItem="599" firstAttribute="top" secondItem="439" secondAttribute="bottom" constant="19"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="Main" destination="8bC-Xf-vdC" id="name-outlet-8bC-Xf-vdC"/>
                         <outlet property="welcomeLabel" destination="439" id="name-outlet-439"/>
                         <outlet property="secondMainLabel" destination="599" id="name-outlet-599"/>
-                        <outlet property="getCourtDateButton" destination="1245" id="name-outlet-1245"/>
-                        <outlet property="waiverFineButton" destination="1520" id="name-outlet-1520"/>
+                        <outlet property="btnGetCourtDate" destination="1245" id="name-outlet-1245"/>
+                        <outlet property="btnWaiverFine" destination="1520" id="name-outlet-1520"/>
+                        <outlet property="MainScreen" destination="4467" id="name-outlet-4467"/>
                     </connections>
+                    <navigationItem id="4467" key="navigationItem" title="Main Menu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <scene sceneID="4333">
+            <objects>
+                <navigationController id="4334" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4336">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="4468" destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4337" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-665" y="-78"/>
         </scene>
     </scenes>
     <resources>
